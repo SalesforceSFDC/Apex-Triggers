@@ -18,6 +18,7 @@ trigger WarrantySummary on Case (before insert) {
                                   + '% through its warranty period.\n '
                                   + 'Extended warranty: ' + hasExtendedWarranty + '\n'
                                   + endingStatement;
+                                  
 
     }
 
