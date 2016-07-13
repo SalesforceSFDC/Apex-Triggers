@@ -11,11 +11,10 @@ trigger WarrantySummary on Case (before insert) {
         Boolean hasExtendedWarranty = myCase.Product_Has_Extended_Warranty__c;
 
         // Populate summary field
-        myCase.Warranty_Summary__c = 'Product purchased on ' + purchaseDate + ''
+        myCase.Warranty_Summary__c = 'Product purchased on ' + purchaseDate +  ' '
                                   + 'and case created on ' + createdDate + '.\n'
-                                  + 'Warranty is for ' + warrantyDays + ''
-                                  + 'days and is ' + warrantyPercentage + ''
-                                  + '% through its warranty period.\n '
+                                  + 'Warranty is for ' + warrantyDays + ' '
+                                  + 'days and is ' + warrantyPercentage + '% through its warranty period.\n '
                                   + 'Extended warranty: ' + hasExtendedWarranty + '\n'
                                   + endingStatement;
 
