@@ -1,0 +1,7 @@
+trigger <<Name>> on <<Object>> (<<before/after>> <<event>>) {
+  for (<<Object>> <<variable>> : Trigger.new) {
+      // Create an object (optional)
+      // Update record
+      // Explicit save (optional)
+    }
+}
