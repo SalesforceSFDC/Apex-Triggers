@@ -1,4 +1,5 @@
-// 
+// Using a trigger to update a multi-picklist from a number of Multi-picklists
+// https://developer.salesforce.com/forums/?id=906F00000008zR8IAI
 
 trigger SaleContractUpdate on Covered_Account__c (After insert, after update) {
 
