@@ -21,6 +21,8 @@ trigger WarrantySummary on Case (before insert) {
                                   
 
     }
+    
+    
 
     /*
     Product purchased on <<Purchase Date>> and case created on <<Case Created Date>>.
