@@ -1,0 +1,15 @@
+trigger HelloWorld on Lead (before update) {
+    for (Lead l : Trigger.new) {
+        l.FirstName = 'Hello';
+        l.LastName  = 'World';
+    }
+}
+
+// Trigger.new - list of all leads in the trigger, loop through all of the leads and through each variable that we are iterating through, temporary assign it to variable l
+
+
+trigger DNCMassUpdate on Lead (after update) {
+    for (Lead l : Trigger.new) {
+        l.DNC_Status__c =
+    }
+}
