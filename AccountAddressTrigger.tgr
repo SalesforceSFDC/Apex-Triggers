@@ -15,7 +15,7 @@ trigger AccountAddressTrigger on Account(before insert, before update) {
                             Match_Billing_Address__c== 1,
                             AccountId = a.Id ));
   }
-  }
+    }
 
   if (acctList.size() > 0) {
     insert acctList;
